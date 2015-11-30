@@ -46,3 +46,10 @@ mysql_query('select username, password from users where username = "' . $_POST['
  *     - use a white file list to filter what's going to be included
  */
 
+/**
+ * 5. use default things and be very predictable. say `root` mysql user, `admin/` folder
+ */
+
+/**
+ * 6. leave installation files online. they maybe used by other to overwrite your entrie website
+ */
