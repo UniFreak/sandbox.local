@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Background</title>
+    <style type="text/css">
+    .wrapper {
+        overflow: hidden;
+    }
+    .sliding-background {
+        height: 500px;
+        width: 3072px;
+        background: url("asset/img/Desert.jpg");
+        animation: slide 60s linear infinite;
+    }
+    @keyframes slide {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-1024px, 0, 0);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sliding-background"></div>
+    </div>
+</body>
+</html>

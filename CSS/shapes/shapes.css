@@ -1,0 +1,36 @@
+div {
+    margin-bottom: 20px;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+#rectangle {
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+/* Cleaner, but slightly less support: use "50%" as value */
+
+#oval {
+    width: 200px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+}
+/* Cleaner, but slightly less support: use "50%" as value */
+

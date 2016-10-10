@@ -1,0 +1,25 @@
+
+html,body,div,dl,dt,dd,ul,ol,label,button,li,menu,h1,h2,h3,h4,h5,h6,pre,form,fieldset,figure,input,textarea,blockquote,p{padding:0; margin:0;} //把尽可能多的元素的边距设置为0
+//table,td,tr,th{font-size:12px;} //统一表格字号
+figure,fieldset,abbr,img,li{vertical-align:top;border:none 0;} //去图片的边距和边框
+ol,ul,dl,menu {list-style:none;} //去掉列表的样式
+//ul{font-size:0;} //去掉display：inline=block产生的空隙
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;} //统一标题的字号
+input{border: none;outline: none;}
+//清楚浮动
+.clear{overflow:hidden;zoom:1;}
+//左浮动mixin
+@mixin fl{
+	float:left;
+}
+//右浮动mixin
+@mixin fr{float:right;}
+//计算像素百分比的方法
+@function get-p($sun-width,$father-width){
+	@return percentage($sun-width/$father-width);
+}
+//计算rem的方法
+@function get-e($width){
+	@return ($width/16)+rem;
+}
+

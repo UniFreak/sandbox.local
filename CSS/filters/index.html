@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS filters</title>
+    <style>
+        .bright {
+            -webkit-filter: brightness(200%);
+        }
+        .bright-origin {
+            -webkit-filter: brightness(100%);
+        }
+        .dark {
+            -webkit-filter: brightness(50%);
+        }
+
+        .sharp {
+            -webkit-filter: contrast(200%);
+        }
+        .contrast-origin {
+            -webkit-filter: contrast(100%);
+        }
+        .mud {
+            -webkit-filter: contrast(50%);
+        }
+
+        .grayscale-origin {
+            -webkit-filter: grayscale(0%);
+        }
+        .midgray {
+            -webkit-filter: grayscale(50%);
+        }
+        .fullgray {
+            -webkit-filter: grayscale(100%);
+        }
+
+        .saturate-origin {
+            -webkit-filter: saturate(100%);
+        }
+        .midsaturate {
+            -webkit-filter: saturate(50%);
+        }
+        .nosaturate {
+            -webkit-filter: saturate(0%);
+        }
+
+        .sepia-origin {
+            -webkit-filter: sepia(0%);
+        }
+        .midsepia {
+            -webkit-filter: sepia(50%);
+        }
+        .fullsepia {
+            -webkit-filter: sepia(100%);
+        }
+
+        .hue-origin {
+            -webkit-filter: hue-rotate(0deg);
+        }
+        .orangehue {
+            -webkit-filter: hue-rotate(180deg);
+        }
+        .bluehue {
+            -webkit-filter: hue-rotate(270deg);
+        }
+
+        .invert-origin {
+            -webkit-filter: invert(0%);
+        }
+        .midinvert {
+            -webkit-filter: invert(50%);
+        }
+        .fullinvert {
+            -webkit-filter: invert(100%);
+        }
+
+        .blur-origin {
+            -webkit-filter: blur(0);
+        }
+        .midblur {
+            -webkit-filter: blur(1px);
+        }
+        .moreblur {
+            -webkit-filter: blur(5px);
+        }
+
+        .transparent {
+            -webkit-filter: opacity(0);
+        }
+        .midopaque {
+            -webkit-filter: opacity(50%);
+        }
+        .fullopaque {
+            -webkit-filter: opacity(100%);
+        }
+
+        .shadowed {
+            -webkit-filter: drop-shadow(5px 5px 10px #666)
+        }
+
+        .custom {
+            -webkit-filter: url("#greenish");
+        }
+    </style>
+</head>
+<body>
+    <img class="bright" src="../../images/Desert.jpg" alt="">
+    <img class="bright-origin" src="../../images/Desert.jpg" alt="">
+    <img class="dark" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="sharp" src="../../images/Desert.jpg" alt="">
+    <img class="contrast-origin" src="../../images/Desert.jpg" alt="">
+    <img class="mud" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="grayscale-origin" src="../../images/Desert.jpg" alt="">
+    <img class="midgray" src="../../images/Desert.jpg" alt="">
+    <img class="fullgray" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="saturate-origin" src="../../images/Desert.jpg" alt="">
+    <img class="midsaturate" src="../../images/Desert.jpg" alt="">
+    <img class="nosaturate" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="sepia-origin" src="../../images/Desert.jpg" alt="">
+    <img class="midsepia" src="../../images/Desert.jpg" alt="">
+    <img class="fullsepia" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="hue-origin" src="../../images/Desert.jpg" alt="">
+    <img class="orangehue" src="../../images/Desert.jpg" alt="">
+    <img class="bluehue" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="invert-origin" src="../../images/Desert.jpg" alt="">
+    <img class="midinvert" src="../../images/Desert.jpg" alt="">
+    <img class="fullinvert" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="blur-origin" src="../../images/Desert.jpg" alt="">
+    <img class="midblur" src="../../images/Desert.jpg" alt="">
+    <img class="moreblur" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="transparent" src="../../images/Desert.jpg" alt="">
+    <img class="midopaque" src="../../images/Desert.jpg" alt="">
+    <img class="fullopaque" src="../../images/Desert.jpg" alt="">
+
+    <hr>
+    <img class="shadowed" src="../../images/Desert.jpg" alt="">
+
+
+    <hr>
+    <img class="custom" src="../../images/Desert.jpg" alt="">
+    <svg style="position: absolute; top: -99999px" xmlns="http://www.w3.org/2000/svg">
+      <filter id="greenish">
+        <feComponentTransfer>
+          <feFuncR type="linear" slope="2" intercept="-0.5"/>
+          <feFuncG type="linear" slope="2" intercept="-0."/>
+          <feFuncB type="linear" slope="2" intercept="-0.25"/>
+        </feComponentTransfer>
+      </filter>
+      <filter id="bluish">
+        <feComponentTransfer>
+          <feFuncR type="linear" slope="2" intercept="-0.5"/>
+          <feFuncG type="linear" slope="2" intercept="-0.1"/>
+          <feFuncB type="linear" slope="2" intercept="0"/>
+        </feComponentTransfer>
+      </filter>
+    </svg>
+</body>
+</html>

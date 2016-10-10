@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>FarmerZ's blog</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1468317917_471173.css">
+</head>
+<body ng-app="myApp" ng-controller="Main">
+<header class="header">
+  <div class="container container_1">
+    <div class="jumbotron">
+      <h1>觅野</h1>
+      <img src="images/me.png" alt="me">
+      <h4 class="name"><i class="iconfont icon-ming">: </i>常东东</h4>
+      <h4 class="phone"><i class="iconfont icon-dianhua">: </i>18672791551</h4>
+      <h4 class="email"><i class="iconfont icon-email">: </i>cddsgtc@163.com</h4>
+      <h4 class="position"><i class="iconfont icon-zhiwei">: </i>web-front-end engineer</h4>
+    </div>
+  </div>
+  <nav id="topNav" class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">觅野前端</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a class="topNav" href="#/web-front-end">web front end</a></li>
+        <li><a class="topNav" href="#/HTML5">HTML5</a></li>
+        <li><a class="topNav" href="#/CSS3">CSS3</a></li>
+        <li><a class="topNav" href="#/JavaScript">JavaScript</a></li>
+        <li><a class="topNav" href="#/Frames">Frames</a></li>
+        <li><a class="topNav" href="#/About_Me">About Me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<section class="mainland main container-fluid">
+  <div class="row">
+    <aside id="leftBar" class="leftBar col-md-1">
+      <ul class="nav">
+        <li><a>记 事</a></li>
+        <li><a class="li_1 " href="#/Notes">1 月</a></li>
+        <li><a class="li_2 " href="#/Notes">2 月</a></li>
+        <li><a class="li_3 " href="#/Notes">3 月</a></li>
+        <li><a class="li_4 " href="#/Notes">4 月</a></li>
+        <li><a class="li_5 " href="#/Notes">5 月</a></li>
+        <li><a class="li_6 " href="#/Notes">6 月</a></li>
+        <li><a class="li_7 " href="#/Notes">7 月</a></li>
+        <li><a class="li_8 " href="#/Notes">8 月</a></li>
+        <li><a class="li_9 " href="#/Notes">9 月</a></li>
+        <li><a class="li_10 " href="#/Notes">10 月</a></li>
+        <li><a class="li_11 " href="#/Notes">11 月</a></li>
+        <li><a class="li_12 " href="#/Notes">12 月</a></li>
+      </ul>
+    </aside>
+    <div class="land col-md-11">
+      <div class="row">
+        <div ng-view></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<footer class="footer">
+  <div class="bottomRiver">bottomRiver</div>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/angular-route/angular-route.min.js"></script>
+<!--应用的js脚本-->
+<script src="js/leftBar.js"></script>
+<script src="js/ngMain.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>
