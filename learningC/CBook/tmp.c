@@ -2,8 +2,5 @@
 
 main()
 {
-    typedef struct node {
-        DataType data;
-        struct node *next;
-    }Node, *LinkList
+    printf("%d", 0.1 + 0.2);
 }
