@@ -1,2 +1,7 @@
 <?php
-var_dump(1?:0);
+$arr = [
+    'a' => 'b',
+    'b' => 'c',
+];
+
+echo json_encode($arr);
