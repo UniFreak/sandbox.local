@@ -1,9 +1,16 @@
 #include <stdio.h>
-char const *f(void) { return "Hello, world!"; }
+#include <string.h>
 
-int
-main(void)
+int main(void)
 {
-  // char const *f(void);
-  printf("%s\n", f());
+    char a[100], *p=a;
+    int n1, n2;
+    n1 = n2 = 0;
+    gets(p);
+    while(*p!='\0') {
+        if (*p == '(') n1++;
+        if (*p == ')') n2++;
+        p++;
+    }
+    if (n1 == n2) printf("od!\n");
 }
