@@ -1,0 +1,14 @@
+<ruleset name="example.com rules"
+       xmlns="http://pmd.sf.net/ruleset/1.0.0"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
+       xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
+
+    <rule name="FunctionRule"
+          message = "Please do not use functions."
+          class="demoMdRule"
+          externalInfoUrl="http://example.com/phpmd/rules.html#functionrule">
+
+        <priority>1</priority>
+    </rule>
+</ruleset>
