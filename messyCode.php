@@ -1,48 +1,53 @@
-<?
-use Dummy\Dummy, What\What;
+<?php
+use Dummy\Dummy;
+use What\What;
+
 namespace Dummy;
-class not_valid extends What
-    implements That {
-  const not_VALID='NOT'; 
+
+class not_valid extends What implements That
+{
+    const not_VALID='NOT';
     var $attr;
     var $_attr;
 
     function tooComplex()
     {
         if ($a) {
-
         } elseif ($b) {
-
         } else {
             switch ($a) {
                 case 1:
-                case 2:  
+                case 2:
                 case 3:
                 case 4:
-                case 5:              
+                case 5:
                 default:
                     break;
             }
         }
     }
 
-    function _NotValid($a,$b=[], $c) {
+    function _NotValid($a, $b = [], $c)
+    {
 
         //some comment
-        return True;
-        echo ''; echo '';
-        if($n){}
+        return true;
+        echo '';
+        echo '';
+        if ($n) {
+        }
         echo 'very ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo line';
 
         switch ($a) {
             case 1:
             case 2:
                 break;
-        }}
+        }
+    }
 
     function longMethod($a, $b, $c, $d, $e, $f, $g, $h)
     {
-        echo 
+        echo
             '........'.
             '........'.
             '........'.
@@ -2509,6 +2514,4 @@ class not_valid extends What
             '........'.
             '........';
     }
-} 
-
-?>
+}
