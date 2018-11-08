@@ -1,2 +1,2 @@
-<?php
-echo urldecode('GET /collect.gif?type=w&uid=&cityid=&url=http%3A%2F%2Frefactor.api.ceshi.youxinjinrong.com%2Fux_finance%2Ffinancial_plan%2Fselectplan%3Fcarid%3D36323497%26_product_client%3Dclient_cbl%26is_new%3D0%26from%3Ddbm%26nb%3D888888865931028790954%26appver%3D3.0.0.8318b%26view%3Dmobile%26appver%3D3.0.0.8318b%26os%3Dandroid%26nb%3D888888865931028790954&ref=&source=&channel=&rf_seo=&rf_key=&cid=unknow&from=m&app=&net=&ua=Mozilla/5.0%20(Linux;%20Android%206.0.1;%20MI%204LTE%20Build/MMB29M;%20wv)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Version/4.0%20Chrome/53.0.2785.49%20Mobile%20MQQBrowser/6.2%20TBS/043024%20Safari/537.36%20dbm/3.0.0.8318b&sc=360*640&ts=1491471796405 HTTP/1.1');
+<?php 
+echo __DIR__;
