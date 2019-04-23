@@ -1,2 +1,11 @@
-<?php 
-echo urldecode('"applyid=3358965&bank_no=&branch_car_addr=%E6%B9%96%E5%8C%97%E7%9C%81%E6%AD%A6%E6%B1%89%E5%B8%82%E4%B8%9C%E8%A5%BF%E6%B9%96%E5%8C%BA%E6%96%B0%E5%9F%8E%E5%8D%81%E4%B8%89%E8%B7%AF&branch_name=%E6%AD%A6%E6%B1%89%E8%BF%90%E9%80%9A%E7%9B%8A%E5%AE%9D&branch_name_oa=%E5%87%AF%E6%9E%AB%E8%9E%8D%E8%B5%84%E7%A7%9F%E8%B5%81%28%E6%9D%AD%E5%B7%9E%29%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%AD%A6%E6%B1%89%E5%88%86%E5%85%AC%E5%8F%B8&brandid=38&city_rank=10&colorid=&colorid_name=%E7%99%BD&dealerid=18921&delivery_cityid=1201&down_pay_time=2018-11-03+16%3A37%3A50&finance_code=98&id_card=420116199809095215&inputted_id=&interior_colorid=&interior_colorid_name=%E9%BB%91&mobile=13071265481&modeid=90016310&money_channel=%E6%96%B0%E7%BD%91%E9%93%B6%E8%A1%8C&msrp_price=43690000&name=%E9%AD%8F%E9%9C%87&on_card_rule=%E9%99%AA%E5%90%8C%E5%89%8D%E5%BE%80&on_card_type=2&packageid=69665&register_cityid=1201&sale_email=hujun1%40xin.com&sale_mobile=15972154222&sale_name=%E8%83%A1%E9%AA%8F1&seriesid=425&source=1&trade_main_config=1&token=a17895250e81cf40dd0aa39508e8dc58"');
+<?php
+$configs = [
+    'a' => 'b',
+    'c' => 'd',
+];
+
+if (empty($configs['d'])) {
+    echo 'hthere';
+} else {
+    print_r($config);
+}

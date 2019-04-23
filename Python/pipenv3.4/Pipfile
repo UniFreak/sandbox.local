@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+koala2 = "*"
+pycel = "==1.0b0"
+pyoo = "*"
+
+[requires]
+python_version = "3.4"
+
+[pipenv]
+allow_prereleases = true

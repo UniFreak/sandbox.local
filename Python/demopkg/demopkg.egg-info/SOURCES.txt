@@ -1,0 +1,7 @@
+README.md
+setup.py
+demopkg/__init__.py
+demopkg.egg-info/PKG-INFO
+demopkg.egg-info/SOURCES.txt
+demopkg.egg-info/dependency_links.txt
+demopkg.egg-info/top_level.txt

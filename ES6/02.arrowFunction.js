@@ -38,7 +38,7 @@ function Person() {
         // as the global object, which is different from the `this`
         // defined by the Person() constructor.
         // In ECMAScript 3/5, this issue was fixed by assigning the value
-        // in this to a variable that could be closed over, say `var self=this`;
+        // in `this` to a variable that could be closed over, say `var self=this`;
         // then use self
         // But in ES6, `this` properly refers to the person object
         this.age++;
