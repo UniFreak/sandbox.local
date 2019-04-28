@@ -17,13 +17,13 @@ var p = new Promise(function(resolve, reject) {
     }
 });
 
-// Every Promise has a method named then which takes a pair of callbacks.
+// Every Promise has a method named `then` which takes a pair of callbacks.
 // The first callback is called if the promise is resolved, while the second
 // is called if the promise is rejected.
 p.then((val) => console.log("Promise Resolved", val),
     (err) => console.log("Promise Rejected", err));
 
-// Returning a value from then callbacks will pass the value to the next then callback.
+// Returning a value from `then` callbacks will pass the value to the next `then` callback.
 var hello = new Promise(function(resolve, reject) {
     resolve("Hello");
 });
@@ -33,7 +33,7 @@ hello.then((str) => `${str} World`)
     .then((str) => console.log(str)) // Hello World!
 
 // When returning a promise, the resolved value of the promise will get passed
-// to the next callback to effectively chain them together. This is a simple
+// to the `next` callback to effectively chain them together. This is a simple
 // technique to avoid "callback hell".
 var p = new Promise(function(resolve, reject) {
     resolve(1);

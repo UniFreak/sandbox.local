@@ -9,7 +9,7 @@ console.log(baz.foo)
 
 /**
  * Computed property names:
- * llow you to write an expression wrapped in square brackets instead of the
+ * allow you to write an expression wrapped in square brackets instead of the
  * regular property name. Whatever the expression evaluates to will become
  * the property name
  */

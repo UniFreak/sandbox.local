@@ -1,6 +1,7 @@
 - well architected applications should expose their low level APIs in an asynchronous fashion as well, especially when they do any sort of I/O or computational heavy processing. like instead of using api like:
 `var data=getDate()`
 the better api would be
+
 ```
 getDate(function(data) {
     // process data

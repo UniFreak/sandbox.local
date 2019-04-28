@@ -4,7 +4,7 @@
  *
  * 1. called when `obj.prop` or `obj[key]`
  *    `obj` might be an object on `receiver`'s prototype chain
- *    `receiver` is sthe object where we first stared searching for this property
+ *    `receiver` is the object where we first stared searching for this property
  * obj.[[Get]](key, receiver)
  *
  * 2. called when `obj.prop = value` or `obj[key] = value`
@@ -55,7 +55,7 @@ var handler = {
         );
     },
     set: function(target, key, value, reciever) {
-        throw new Error('Pleas dont set properties on this objec');
+        throw new Error('Pleas dont set properties on this object');
     }
     // other traps including(line up with the 14 internal methods above)
     //   .getPrototypeOf()

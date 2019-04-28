@@ -1,5 +1,5 @@
 /**
- * prepend 0o or 0O to convert into binary value
+ * prepend 0o or 0O to convert into octal value
  */
 let oValue = 0o10;
 console.log(oValue);
