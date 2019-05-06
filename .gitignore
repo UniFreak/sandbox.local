@@ -2,3 +2,4 @@
 .idea/
 *ign.*
 vendor/
+node_modules/
