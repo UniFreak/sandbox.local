@@ -1,4 +1,7 @@
+
 /**
+ * two mode: `script` or `module`
+ *
  * ES6 modules are automatically strict-mode code,
  * even if you don’t write "use strict"; in them.
  *
@@ -34,7 +37,8 @@ function detectCats(canvas, options) {
   return kittydar.detectCats(canvas);
 }
 
-export class Kittydar {
+// can only set one default export per module
+export default class Kittydar {
 }
 
 // This helper function isn't exported.
@@ -44,6 +48,7 @@ function resizeCanvas() {
 export {
     detectCats as tellCats
 }
+// use `export default Kittydar` or `export { Kittydar as default}` to do defualt export
 
 // ==================== file: module client | import ====================
 /**
@@ -51,8 +56,12 @@ export {
  * - `import {tellCats as detectCats} from "kittydar.js"`
  * - `import {tellCats} from "kittydar.js"`
  * - `import * as kitty from "kittydar.js"`
+ * - `import tellCats from "kittydar.js"`
  */
+import "kittydar.js" // import without binding
 import {tellCats} from "kittydar.js";
+import tellCats from "kittydar.js"; // default import: no {}
+import {default as tellCats} from "kittydar.js"; // default import: renaming
 
 function go() {
     var canvas = document.getElementById("catpix");
