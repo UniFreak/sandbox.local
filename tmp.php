@@ -1,3 +1,4 @@
 <?php
 $a = null;
-var_dump(isset($a));
+$b = ['hiay' => null];
+var_dump(isset($a), isset($b['hiay']));
