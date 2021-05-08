@@ -1,4 +1,12 @@
 <?php
+// 自定义流过滤器需要
+// - 扩展 php_user_filter 类
+// - 实现 filter(), onCreate(), onClose()
+// - 使用 stream_filter_register() 注册
+//
+// 流会把数据分成按次序排列的桶, 每个桶中的流数据量是固定的. 桶队列中的每个桶具有两个公开属性:
+// data 和 datalen
+
 // ==================== strtoupper filter ====================
 class strtoupper_filter extends php_user_filter {
     public $stream;

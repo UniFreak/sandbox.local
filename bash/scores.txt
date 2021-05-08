@@ -1,0 +1,4 @@
+Rich Blum,team1,100,115,95
+Barbara Blum,team1,110,115,110
+Christine Bresnahan,team2,120,115,118
+Time Bresnahan,team2,125,112,116

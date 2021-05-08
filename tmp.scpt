@@ -1,0 +1,1 @@
+activate application "Bluetooth File Exchange"

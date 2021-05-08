@@ -1,0 +1,11 @@
+digraph MyGraph {
+  a -> b [color="black:red:blue"]
+  a -> c [color="black:red;0.5:blue"]
+  a -> d [dir=none,color="green:red:blue"]
+  a -> e [dir=none,color="green:red;.3:blue"]
+  a -> f [dir=none,color="orange"]
+  d -> g [arrowsize=2.5]
+  d -> h [style=dashed]
+  d -> i [style=dotted]
+  d -> j [penwidth=5]
+}

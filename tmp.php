@@ -1,4 +1,2 @@
 <?php
-$a = null;
-$b = ['hiay' => null];
-var_dump(isset($a), isset($b['hiay']));
+var_dump(['a', 'b', ['c']] == ['a', 'b', ['c']]);

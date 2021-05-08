@@ -75,7 +75,7 @@ xhr.open("post", "server.php", true); // 准备请求: 使用 get 方法请求 s
  * 如果要模仿表单提交, 需要:
  * 1. 将 Content-Type header 设置为 application/x-www-form-urlencoded
  * 2. 使用 encodeURIComponent 编码 post 字符串
- * 之后再服务端, 可以用 php 的 $_POST 访问请求数据(否则需使用 $HTTP_RAW_POST_DATA)
+ * 之后在服务端, 可以用 php 的 $_POST 访问请求数据(否则需使用 $HTTP_RAW_POST_DATA)
  *
  * 可以通过 .setRequestHeader() 设置请求的 header, 此函数必须在 open() 之后, send() 之前
  * 收到请求后, 可以使用 .getResponseHeader() 或 .getAllResponseHeaders() 获取响应 header

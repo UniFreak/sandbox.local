@@ -21,3 +21,4 @@ writeln(sprintf('%o', fileperms($testFile)));
 chmod($testFile, 0777);
 clearstatcache();
 writeln(sprintf('%o', fileperms($testFile)));
+
